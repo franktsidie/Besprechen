@@ -33,6 +33,13 @@ public class Person {
 		this.adresse = adresse;
 	}
 
+	public Person(String vorname, String nachname, int geburtsjahr) {
+		
+		this.vorname = vorname;
+		this.nachname = nachname;
+		this.geburtsjahr = geburtsjahr;
+	}
+
 	public String getVorname() {
 		return this.vorname;
 	}

@@ -29,6 +29,11 @@ public class TestPerson extends TestCase {
 		System.out.println(p2.toString());
 		System.out.println(p3.toString());
 		
+		
 	}
-
+	public void testGeburtsjahr(){
+		Person p4= new Person("Michael","schneider",2000) ;
+		p4.setGeburtsjahr(1980);
+		assertEquals(p4.getGeburtsjahr() ,1980);
+	}
 }
