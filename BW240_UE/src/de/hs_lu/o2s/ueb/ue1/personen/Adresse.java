@@ -104,6 +104,6 @@ public class Adresse {
 
 	@Override
 	public String toString() {
-		return this.str + " " + this.hnr + "\n" + this.plz + " " + this.stadt + "\n" + this.bundesland + "\n" + this.land;
+		return this.str + " " + this.hnr + "\n" + this.plz + " " + this.stadt + "\n" + this.bundesland + "\n" + this.land+"\n";
 	}
 }

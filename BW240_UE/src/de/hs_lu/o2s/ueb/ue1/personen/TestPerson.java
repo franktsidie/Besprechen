@@ -16,8 +16,14 @@ public class TestPerson extends TestCase {
 		
 		Person p1 = new Person("Arthur ","Clarke");
 		p1.setAdresse(adr1);
-		Person p2 = new Person("Grete"," Waitz",adr2);
-		Person p3 = new Person("Carola"," Magnussen", new Adresse("Roellingsgaden","132","1114","","Koebenhavn","Dänemark"));
+		Person p2 = new Person("Peter"," Mudras",adr2);
+		Person p3 = new Person("Thomas"," Schüssler", new Adresse("Paul-Wittsack-Straße","10","68163","Mannheim","Baden-Württemberg","Deutschland"));
+		
+		p2.setBeruftaetig(true);
+		p3.setBeruftaetig(true);
+		p1.setBeruftaetig(false);
+		p2.setBeruf("Lehrer");
+		p3.setBeruf("Lehrer");
 		
 		System.out.println(p1.toString());
 		System.out.println(p2.toString());

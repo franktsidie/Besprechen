@@ -87,7 +87,15 @@ public class Person {
 
 	public String toString() {
 
-		return this.vorname + " " + this.nachname + "\n" + "Beruf : " + this.beruf + "\n" + getBeruf()
-				+ "\nGeboren im Jahr" + getGeburtsjahr() + "Adresse :" + adresse.toString()+"\n\n";
+		return this.vorname + " " + this.nachname + "\n" + "Beruf : " +getBeruf() 
+				 + "\nAdresse :\n" + adresse.toString();
 	}
+	/**
+	 * meine tosting mehtode die auch der gebursdatum angibt
+	 */
+//	public String toString() {
+//		
+//		return this.vorname + " " + this.nachname + "\n" + "Beruf : " +getBeruf() 
+//		+ "\nGeboren im Jahr" + getGeburtsjahr() + "\nAdresse :\n" + adresse.toString()+"\n";
+//	}
 }
