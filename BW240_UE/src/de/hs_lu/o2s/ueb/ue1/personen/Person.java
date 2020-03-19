@@ -15,7 +15,7 @@ public class Person {
 	private String vorname, nachname;
 	private Boolean beruftaetig;
 	private String beruf;
-	private String adresse;
+	private Adresse adresse;
 	private int geburtsjahr;
 
 	Person() {
@@ -30,7 +30,7 @@ public class Person {
 	Person(String vorname, String nachname, Adresse adresse) {
 		this.vorname = vorname;
 		this.nachname = nachname;
-		this.adresse = adresse.toString();
+		this.adresse = adresse;
 	}
 
 	public String getVorname() {
@@ -67,12 +67,12 @@ public class Person {
 		this.beruf = beruf;
 	}
 
-	public String getAdresse() {
+	public Adresse getAdresse() {
 		return this.adresse;
 	}
 
-	public void setAdresse(String adresse) {
-		this.adresse = adresse;
+	public void setAdresse(Adresse adr1) {
+		this.adresse = adr1;
 	}
 
 	public int getGeburtsjahr() {
@@ -88,6 +88,6 @@ public class Person {
 	public String toString() {
 
 		return this.vorname + " " + this.nachname + "\n" + "Beruf : " + this.beruf + "\n" + getBeruf()
-				+ "\nGeboren im Jahr" + getGeburtsjahr() + "Adresse :" + adresse.toString();
+				+ "\nGeboren im Jahr" + getGeburtsjahr() + "Adresse :" + adresse.toString()+"\n\n";
 	}
 }
