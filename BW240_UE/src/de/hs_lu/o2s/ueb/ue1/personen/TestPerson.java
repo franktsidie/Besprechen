@@ -32,7 +32,10 @@ public class TestPerson extends TestCase {
 		
 	}
 	public void testGeburtsjahr(){
-		Person p4= new Person("Michael","schneider",2000) ;
+		
+//		Person p4= new Person("Michael","schneider",2000) ;    alternative wertzuweisung zum alternative konstruktor.
+	
+		Person p4= new Person("Michael","schneider") ;
 		p4.setGeburtsjahr(1980);
 		assertEquals(p4.getGeburtsjahr() ,1980);
 	}

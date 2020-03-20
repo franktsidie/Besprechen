@@ -32,13 +32,14 @@ public class Person {
 		this.nachname = nachname;
 		this.adresse = adresse;
 	}
-
-	public Person(String vorname, String nachname, int geburtsjahr) {
-		
-		this.vorname = vorname;
-		this.nachname = nachname;
-		this.geburtsjahr = geburtsjahr;
-	}
+// alternative konstruktor
+	
+//	public Person(String vorname, String nachname, int geburtsjahr) {
+//		
+//		this.vorname = vorname;
+//		this.nachname = nachname;
+//		this.geburtsjahr = geburtsjahr;
+//	}
 
 	public String getVorname() {
 		return this.vorname;

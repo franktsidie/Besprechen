@@ -9,5 +9,6 @@
 	<classpathentry kind="src" path="tuto"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
 	<classpathentry kind="lib" path="BW240_UE/src/de/hs_lu/o2s/ueb/ue1/personen/TestPerson.jar"/>
+	<classpathentry kind="lib" path="BW240_UE/src/de/hs_lu/o2s/ueb/ue1/personen/TestHuehner.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
