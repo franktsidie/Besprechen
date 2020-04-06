@@ -5,7 +5,7 @@ package de.hs_lu.o2s.ueb.ue1.personen;
 
 /**
  * @author frank
- *
+ *cool
  */
 public class Person {
 	/*
