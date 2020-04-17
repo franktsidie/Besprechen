@@ -80,7 +80,10 @@ public class Kartenstapel {
 	 * @return
 	 */
 	public Spielkarte pop() {
-
+		
+		if (empty()) {
+			return null;
+		}
 		Spielkarte gespeichert = this.kartenA[this.kartenA.length - 1];
 		Spielkarte[] kartenNeu = new Spielkarte[this.kartenA.length - 1];
 		
@@ -99,7 +102,9 @@ public class Kartenstapel {
 	 * @return
 	 */
 	public Spielkarte top() {
-		if (this.kartenA[this.kartenA.length - 1] == null) {
+		
+		//pruefe ob leer ist und gebe die entsprechende ergebnis zurueck
+		if (empty()) {
 			return null;
 		} else {
 			return this.kartenA[this.kartenA.length - 1];
@@ -112,8 +117,9 @@ public class Kartenstapel {
 	 * @return
 	 */
 	public Spielkarte last() {
-
-		if (this.kartenA[0] == null) {
+		
+		//pruefe ob leer ist und gebe die entsprechende ergebnis zurueck
+		if (empty()) {
 			return null;
 		} else {
 			return this.kartenA[0];
@@ -128,14 +134,21 @@ public class Kartenstapel {
 	 * @return
 	 */
 	public boolean empty() {
+		boolean alleKarten=false;
+		
+		//wenn die length 0 ist dann ist es klar dass es empty ist.
+		if(kartenA.length==0)
+			alleKarten=true;
+		//ich habe auch zur sicherheit pruefen wollen, ob es irgendwo keine leere karte gibt.(null)
 		for (int i = 0; i < kartenA.length; i++) {
+			
 			if (this.kartenA[i] != null) {
-
+				
 				return false;// wenn nicht leer ist .
-
+				//aslso wenn eine karte gefunden wird sofort abrechen 
 			}
-		}
-		return true;// wenn doch .
+		}System.out.println("Das Kartenstapel ist leer");
+		return alleKarten;// wenn doch .
 	}
 
 	/**
@@ -246,8 +259,8 @@ public class Kartenstapel {
 	 */
 	public Spielkarte popRandomCard() {
 		/**
-		 * ich erschaffe zunächt eine neue spielkarte der mit dem laufenden karte
-		 * befullt wird ohne die entfernte karte zu ubernehmen
+		 * ich erschaffe zunächt eine neue spielkarte ,der mit dem laufenden karte
+		 * befuellt wird ohne die entfernte karte zu uebernehmen
 		 * 
 		 * ich kürze auch die länge um 1
 		 */
